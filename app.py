@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Define a simple route for GET
-@app.route('/api/data', methods=['GET'])
+@app.route('/niki', methods=['GET'])
 def get_data():
     # Sample data to return
     data = {
@@ -11,7 +11,7 @@ def get_data():
         "success": True,
         "data": {
             "id": 1,
-            "name": "Sample Item"
+            "name": "Sample Item Charith"
         }
     }
     return jsonify(data)
